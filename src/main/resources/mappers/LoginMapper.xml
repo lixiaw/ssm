@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lucifer.ssm.dao.login.LoginDao">
+<select id="doLogin" resultType="java.util.HashMap" parameterType="java.util.Map">
+    SELECT USERID,UNAME,UPHONE FROM USER_LOGIN WHERE UNAME=#{userName} and UPASS=#{password}
+</select>
+</mapper>
